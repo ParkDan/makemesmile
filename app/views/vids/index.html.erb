@@ -1,0 +1,15 @@
+
+<p><%= link_to 'Add a New Vid', new_vid_url %></p>
+
+<div class="list">
+<ul>
+  <% @vids.each do |vid| %>
+    <li><iframe width="560" height="315" src="<%=vid.source%>" frameborder="0" allowfullscreen></iframe>
+      <p>
+        <%= link_to vid.caption, vid_url(vid.id) %>
+      </p>
+    </li>
+  <% end %>
+</ul>
+</div>
+<footer></footer>

@@ -1,0 +1,25 @@
+<h1>Editing Vid #<%= @vid.id %></h1>
+
+<iframe width="560" height="315" src="<%=@vid.source%>" frameborder="0" allowfullscreen></iframe>
+<%= form_tag(vid_url(@vid), method: 'put') do %>
+
+  <div>
+    <%= label_tag :source %><br />
+    <%= text_field_tag :source, @vid.source %>
+  </div>
+
+  <div>
+    <%= label_tag :caption %><br />
+    <%= text_area_tag :caption, @vid.caption %>
+  </div>
+
+  <div>
+    <%= label_tag :rating %><br />
+    <%= text_field_tag :rating, @vid.rating %>
+  </div>
+
+  <div>
+    <%= submit_tag "Update Vid" %>
+  </div>
+
+<% end %>

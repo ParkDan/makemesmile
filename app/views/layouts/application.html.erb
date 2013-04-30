@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Makemesmile</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+          <h1>Make Me Smile</h1>
+            <div id="signinfo"><form class="navbar-form pull-right">
+                 <% if user_signed_in? %>
+                    Signed in as <%= current_user.email %>. Not you?
+                    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+                  <% else %>
+                    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+                <% end %>
+            </form></div>
+            <div class=rooticon><%= link_to image_tag("http://www.cartoonlogodesigns.com/images/misc/Smiley%20faces/smiley%20face.jpg", width: 30), vids_url %><div>
+<%= yield %>
+<br>
+
+</body>
+</html>

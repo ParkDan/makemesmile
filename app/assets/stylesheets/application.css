@@ -1,0 +1,33 @@
+body{
+ background-color:  #BFFEE3;
+ font-style: arial bold;
+}
+
+h1{
+  height:60px;
+  background-color: #80FEC8;
+  padding: 20px 0px 0px 0px;
+  font-weight: bolder;
+  color: white;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  text-align: center;
+}
+div{
+  text-align: center;
+}
+ul, li{
+    list-style:none;
+    list-style-type:none;
+}
+p{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#signinfo{
+    text-align: right;
+}

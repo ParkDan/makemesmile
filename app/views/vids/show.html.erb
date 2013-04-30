@@ -1,0 +1,29 @@
+<h2>Smile #<%= @vid.id %></h2>
+
+<p>
+  <iframe width="560" height="315" src="<%=@vid.source%>" frameborder="0" allowfullscreen></iframe><br>
+  <%= link_to "Edit", edit_vid_url(@vid.id) %>
+  <%= link_to "Delete", vid_url(@vid.id), :method => :delete, :confirm => "Are you sure?" %>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%= @vid.source %>
+</p>
+
+<p>
+  <b>Caption:</b>
+  <%= @vid.caption %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @vid.rating %>
+</p>
+
+<p>
+  <b>Youtubeid:</b>
+  <%= @vid.youtubeid %>
+</p>
+
+

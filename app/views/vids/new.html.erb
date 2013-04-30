@@ -1,0 +1,31 @@
+<p>New Smile</p>
+
+
+<%= form_tag(vids_url, method: 'post') do %>
+
+
+  <div>
+    <%= label_tag :source, "Source: "%><br />
+    <%= text_field_tag :source %>
+  </div>
+
+    <div>
+    <%= label_tag :caption, "Caption: "%><br />
+    <%= text_area_tag :caption %>
+  </div>
+
+    <div>
+    <%= label_tag :rating, "Rating: " %><br />
+    <%= text_field_tag :rating %>
+  </div>
+
+    <div>
+    <%= label_tag :youtubeid, "Youtube Id: " %><br />
+    <%= text_field_tag :youtubeid %>
+  </div>
+
+
+  <div>
+    <%= submit_tag "Create Vid" %>
+  </div>
+<% end %>
