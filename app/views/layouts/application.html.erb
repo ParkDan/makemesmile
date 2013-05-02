@@ -5,9 +5,12 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Chicle' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <div class="container">
           <h1>Make Me Smile</h1>
+          <%= link_to image_tag("http://www.cartoonlogodesigns.com/images/misc/Smiley%20faces/smiley%20face.jpg", width: 30, id: "homelink"), vids_url %>
             <div id="signinfo"><form class="navbar-form pull-right">
                  <% if user_signed_in? %>
                     Signed in as <%= current_user.email %>. Not you?
@@ -16,10 +19,12 @@
                     <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
                 <% end %>
             </form></div>
-            <div class=rooticon><%= link_to image_tag("http://www.cartoonlogodesigns.com/images/misc/Smiley%20faces/smiley%20face.jpg", width: 30), vids_url %><div>
-<div class="container"
+
 <%= yield %>
 </div>
-
+  <hr>
+  <div class="footer">
+      <p>&copy; Company 2013</p>
+  </div>
 </body>
 </html>

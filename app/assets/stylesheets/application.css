@@ -1,17 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+ *= require_tree .
+ *= require_self
+ */
+
+
+.form{
+        margin: 10 auto;
+        padding: 5;
+        max-width: 550px;
+        background-color: #000000;
+        padding: 0px;
+        border-radius: 10px;
+        font-weight: bold;
+        text-align: center;
+        border: solid black 5px;
+
+}
+
 body{
  background-color:  #BFFEE3;
  font-style: arial bold;
 }
 
+#homelink{
+  background-color: transparent;
+  float: left;
+  margin: 10px;
+}
+.container{
+        margin: 0 auto;
+        max-width: 850px;
+        background-color: #F0FFFF;
+        padding: 0px;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
 h1{
-  height:60px;
+  height:70px;
+  width: 850px;
   background-color: #80FEC8;
   padding: 20px 0px 0px 0px;
+  border-radius: 10px 10px 0px 0px ;
   font-weight: bolder;
   color: white;
+  font-size: 4em;
   margin: 0 auto;
   letter-spacing: 2px;
   text-align: center;
+  font-family: 'Chicle', cursive;
+}
+h2{
+  text-align: center
 }
 div{
   text-align: center;
@@ -27,7 +77,11 @@ a{
     text-decoration: none;
     font-weight: bold;
 }
-
+.footer{
+    padding:0 0 10px 0;
+    height:30px;
+}
 #signinfo{
     text-align: right;
+    margin: 10px;
 }
