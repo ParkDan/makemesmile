@@ -1,4 +1,4 @@
-<h1>Editing Vid #<%= @vid.id %></h1>
+<h4>Editing Vid #<%= @vid.id %></h4>
 
 <iframe width="560" height="315" src="<%=@vid.source%>" frameborder="0" allowfullscreen></iframe>
 <%= form_tag(vid_url(@vid), method: 'put') do %>
