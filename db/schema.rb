@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130430030803) do
+ActiveRecord::Schema.define(:version => 20130502220453) do
 
   create_table "admins", :force => true do |t|
     t.string   "email"
@@ -42,7 +42,6 @@ ActiveRecord::Schema.define(:version => 20130430030803) do
     t.string "source"
     t.text   "caption"
     t.float  "rating"
-    t.string "youtubeid"
   end
 
 end

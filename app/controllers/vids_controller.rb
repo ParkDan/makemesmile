@@ -17,8 +17,7 @@ class VidsController < ApplicationController
     @vid.source = params[:source]
     @vid.caption = params[:caption]
     @vid.rating = params[:rating]
-    @vid.youtubeid = params[:youtubeid]
-    
+
     if @vid.save
             redirect_to vids_url
           else
@@ -35,8 +34,7 @@ class VidsController < ApplicationController
     @vid.source = params[:source]
     @vid.caption = params[:caption]
     @vid.rating = params[:rating]
-    @vid.youtubeid = params[:youtubeid]
-    
+
     if @vid.save
             redirect_to vids_url
           else

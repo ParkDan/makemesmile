@@ -31,12 +31,21 @@ body{
  background-color:  #BFFEE3;
  font-style: arial bold;
 }
-
+#up{
+  padding:5px;
+  margin-bottom: 10px;
+}
 #homelink{
   background-color: transparent;
   float: left;
   margin: 10px;
 }
+
+.uncenter{
+  text-align: left;
+  margin: 10px 10px 10px 150px;
+}
+
 .container{
         margin: 0 auto;
         max-width: 850px;
@@ -70,9 +79,7 @@ ul, li{
     list-style:none;
     list-style-type:none;
 }
-p{
-    text-align: center;
-}
+
 a{
     text-decoration: none;
     font-weight: bold;
