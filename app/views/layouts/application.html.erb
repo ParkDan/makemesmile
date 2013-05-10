@@ -20,7 +20,8 @@
                 <option value=<%= vid_url(vid.id) %>><%= vid.caption %></option>
             <% end  %>
             </select>
-            <input class="btn btn-success" id = "up" type="button" name="Submit" value="Go!" onClick="window.open(vidmenu.value,'newtab'+vidmenu.value)">
+            <input class="btn btn-success" id = "up" type="button" name="Submit" value="Go!" onClick="window.location.href=vidmenu.value">
+            <!-- window.open(vidmenu.value,'newtab'+vidmenu.value)  to open in new window-->
             </form>
 
             <div id="signinfo"><form class="navbar-form pull-right">
@@ -32,6 +33,7 @@
                 <% end %>
             </form></div>
             <div><br><br><br></div>
+            <%= notice %>
 <%= yield %>
 </div>
   <hr>

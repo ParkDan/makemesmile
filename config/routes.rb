@@ -5,6 +5,8 @@ Makemesmile::Application.routes.draw do
   # CREATE
   get '/vids/new', controller: 'vids', action: 'new', as: 'new_vid'
   post '/vids', controller: 'vids', action: 'create'
+  post '/vids/:id', controller: 'vids', action: 'create_comment', as:'vid_comment'
+
 
   # READ
   get '/vids', controller: 'vids', action: 'index', as: 'vids'
@@ -16,6 +18,7 @@ Makemesmile::Application.routes.draw do
 
   # DELETE
   delete '/vids/:id', controller: 'vids', action: 'destroy'
+  delete '/vids/:id/:comment_id' => "vids#destroy_comment", as: 'destroy_comment'
   #------------------------------
 
   # The priority is based upon order of creation:
